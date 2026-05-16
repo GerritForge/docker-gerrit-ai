@@ -1,4 +1,4 @@
-FROM gerritcodereview/gerrit:latest
+FROM gerritcodereview/gerrit:3.14.0
 
 ENV GERRIT_CI=https://gerrit-ci.gerritforge.com/job/
 ENV GERRIT_AI_SCRIPTS=https://gerrit.googlesource.com/plugins/scripts/+/refs/heads/stable-3.14/ai
