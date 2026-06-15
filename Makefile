@@ -7,3 +7,5 @@ build: git/samples/task-dashboard.git
 git/samples/task-dashboard.git:
 	cd git/samples && git clone --mirror https://github.com/GerritForge/task-dashboard.git
 	
+clean:
+	rm -Rf git/samples/task-dashboard.git
