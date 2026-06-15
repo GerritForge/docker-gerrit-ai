@@ -8,7 +8,7 @@ COPY ./static /var/gerrit/static/
 COPY gerrit-ai-entrypoint.sh /
 COPY firstLogin.1000000 /var/gerrit/data/plugin-manager/
 COPY index/changes_0088 /var/gerrit/index/
-COPY git/samples /var/gerrit/git/
+COPY git/ /var/gerrit/git/
 
 ADD --chown=gerrit:gerrit $GERRIT_CI/plugin-scripting-groovy-provider-gh-bazel-master-stable-3.14/lastSuccessfulBuild/artifact/bazel-bin/plugins/groovy-provider/groovy-provider.jar /var/gerrit/plugins/
 ADD --chown=gerrit:gerrit $GERRIT_CI//plugin-ai-review-agent-provider-gh-bazel-stable-3.14/lastSuccessfulBuild/artifact/bazel-bin/plugins/ai-review-agent-provider/ai-review-agent-provider.jar /var/gerrit/plugins/
