@@ -62,7 +62,7 @@ atomic steps rather than a single, overwhelming pull request.
    docker logs -f gerrit-ai
    ```
 
-3. Wait until the `[main] INFO  com.google.gerrit.pgm.Daemon : Gerrit Code Review 3.14.0 ready` message to
+3. Wait until the `[main] INFO  com.google.gerrit.pgm.Daemon : Gerrit Code Review 3.15.0 ready` message to
    appears on the console fo the `gerrit-ai` container.
 
 4. Open the http://localhost URL in the browser to show the Gerrit AI spash page.
