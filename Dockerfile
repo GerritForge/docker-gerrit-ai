@@ -7,7 +7,6 @@ ENV AI_LLMS="gemini claude chatgpt llama openrouter"
 COPY --chown=gerrit:gerrit ./static /var/gerrit/static/
 COPY --chown=gerrit:gerrit gerrit-ai-entrypoint.sh /
 COPY --chown=gerrit:gerrit firstLogin.1000000 /var/gerrit/data/plugin-manager/
-COPY --chown=gerrit:gerrit index/changes_0088 /var/gerrit/index/
 COPY --chown=gerrit:gerrit git/ /var/gerrit/git/
 
 ADD --chown=gerrit:gerrit $GERRIT_CI/plugin-groovy-provider-gh-bazel-master-stable-3.15/lastSuccessfulBuild/artifact/bazel-bin/plugins/groovy-provider/groovy-provider.jar /var/gerrit/plugins/
